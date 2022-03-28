@@ -64,9 +64,10 @@ System.register("chunks:///_virtual/GameMgr.ts", ['./_rollupPluginModLoBabelHelp
         _proto.success = function success(position) {
           this.doSomething(position.coords.latitude, position.coords.longitude);
           console.log("HEADING: ", position.coords.heading);
-          console.log("COORDS: ", position.coords); // let euler = this.Plane.getRotation().getEulerAngles();
+          console.log("SPEED: ", position.coords.speed); // let euler = this.Plane.getRotation().getEulerAngles();
 
-          if (position.coords.speed != 0) {
+          if (position.coords.speed > 0) {
+            console.log("UPDATE ROTATION");
             this.Plane.setRotationFromEuler(0, position.coords.heading, 0);
           }
         };
