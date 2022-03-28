@@ -1,6 +1,80 @@
-System.register("chunks:///_virtual/GameMgr.ts",["./_rollupPluginModLoBabelHelpers.js","cc"],(function(o){"use strict";var t,e,i,n;return{setters:[function(o){t=o.inheritsLoose},function(o){e=o.cclegacy,i=o._decorator,n=o.Component}],execute:function(){var r;e._RF.push({},"f304crMXitM0JixEVE1cLGZ","GameMgr",void 0);var s=i.ccclass;i.property,o("GameMgr",s("GameMgr")(r=function(o){function e(){return o.apply(this,arguments)||this}t(e,o);var i=e.prototype;return i.revokePermission=function(){navigator.permissions.query({name:"geolocation"}).then((function(o){console.log(o.state)}))},i.start=function(){this.revokePermission();navigator.geolocation.watchPosition(this.success.bind(this),this.error.bind(this),{enableHighAccuracy:!0,maximumAge:3e4,timeout:27e3})},i.success=function(o){this.doSomething(o.coords.latitude,o.coords.longitude)},i.error=function(){alert("Sorry, no position available.")},i.doSomething=function(o,t){console.log("position: ",o,t)},e}(n))||r);e._RF.pop()}}}));
+System.register("chunks:///_virtual/GameMgr.ts", ['./_rollupPluginModLoBabelHelpers.js', 'cc'], function (exports) {
+  'use strict';
 
-System.register("chunks:///_virtual/main",["./GameMgr.ts"],(function(){"use strict";return{setters:[null],execute:function(){}}}));
+  var _inheritsLoose, cclegacy, _decorator, Component;
+
+  return {
+    setters: [function (module) {
+      _inheritsLoose = module.inheritsLoose;
+    }, function (module) {
+      cclegacy = module.cclegacy;
+      _decorator = module._decorator;
+      Component = module.Component;
+    }],
+    execute: function () {
+      var _dec, _class;
+
+      cclegacy._RF.push({}, "f304crMXitM0JixEVE1cLGZ", "GameMgr", undefined);
+
+      var ccclass = _decorator.ccclass,
+          property = _decorator.property;
+      var GameMgr = exports('GameMgr', (_dec = ccclass('GameMgr'), _dec(_class = /*#__PURE__*/function (_Component) {
+        _inheritsLoose(GameMgr, _Component);
+
+        function GameMgr() {
+          return _Component.apply(this, arguments) || this;
+        }
+
+        var _proto = GameMgr.prototype;
+
+        _proto.revokePermission = function revokePermission() {
+          navigator.permissions.query({
+            name: 'geolocation'
+          }).then(function (result) {
+            console.log("RESULT_T: ", result.state);
+          });
+        };
+
+        _proto.start = function start() {
+          console.log("Version: 3");
+          this.revokePermission();
+          var options = {
+            enableHighAccuracy: true,
+            maximumAge: 30000,
+            timeout: 27000
+          }; // [3]
+
+          var watchID = navigator.geolocation.watchPosition(this.success.bind(this), this.error.bind(this), options);
+        };
+
+        _proto.success = function success(position) {
+          this.doSomething(position.coords.latitude, position.coords.longitude);
+        };
+
+        _proto.error = function error() {
+          alert('Sorry, no position available.');
+        };
+
+        _proto.doSomething = function doSomething(a, b) {
+          console.log("position: ", a, b);
+        };
+
+        return GameMgr;
+      }(Component)) || _class));
+
+      cclegacy._RF.pop();
+    }
+  };
+});
+
+System.register("chunks:///_virtual/main", ['./GameMgr.ts'], function () {
+  'use strict';
+
+  return {
+    setters: [null],
+    execute: function () {}
+  };
+});
 
 (function(r) {
   r('virtual:///prerequisite-imports/main', 'chunks:///_virtual/main'); 
@@ -20,3 +94,4 @@ System.register("chunks:///_virtual/main",["./GameMgr.ts"],(function(){"use stri
     };
     });
 });
+//# sourceMappingURL=index.js.map

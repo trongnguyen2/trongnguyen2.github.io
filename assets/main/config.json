@@ -1,1 +1,44 @@
-{"importBase":"import","nativeBase":"native","name":"main","deps":[],"uuids":["03c826ad1","6dJvFdWdxEI4ygGYzkXjwx","0bqs1dY81LmaPprRFOJv4X","12Y9dMgWdJKJGmTiZyQR9H@2e76e","1brw/JvvpFnIvdrxpFCgMZ","d2nyiizuZCTqhXA/8Qop/l@1b53b","d2nyiizuZCTqhXA/8Qop/l@ea6e2","d3x4IMKphEKYvHuEU7yaxB","fdjsU2o1RKF5x0TziDw3jI"],"paths":{"8":["db:/internal/default_renderpipeline/builtin-forward",0]},"scenes":{"db://assets/newScence.scene":2,"db://assets/main.scene":1},"packs":{"03c826ad1":["3","4","1","5","6","7"]},"versions":{"import":[],"native":[]},"redirect":[],"debug":false,"extensionMap":{},"types":["cc.RenderPipeline"]}
+{
+    "importBase": "import",
+    "nativeBase": "native",
+    "name": "main",
+    "deps": [],
+    "uuids": [
+        "03c826ad1",
+        "0baacd5d-63cd-4b99-a3e9-ad114e26fe17",
+        "1263d74c-8167-4928-91a6-4e2672411f47@2e76e",
+        "1baf0fc9-befa-459c-8bdd-af1a450a0319",
+        "6d26f15d-59dc-4423-8ca0-198ce45e3c31",
+        "d29f28a2-cee6-424e-a857-03ff10a29fe5@1b53b",
+        "d29f28a2-cee6-424e-a857-03ff10a29fe5@ea6e2",
+        "d3c7820c-2a98-4429-8bc7-b8453bc9ac41",
+        "fd8ec536-a354-4a17-9c74-4f3883c378c8"
+    ],
+    "paths": {
+        "fd8ec536-a354-4a17-9c74-4f3883c378c8": [
+            "db:/internal/default_renderpipeline/builtin-forward",
+            "cc.RenderPipeline"
+        ]
+    },
+    "scenes": {
+        "db://assets/newScence.scene": "0baacd5d-63cd-4b99-a3e9-ad114e26fe17",
+        "db://assets/main.scene": "6d26f15d-59dc-4423-8ca0-198ce45e3c31"
+    },
+    "packs": {
+        "03c826ad1": [
+            "1263d74c-8167-4928-91a6-4e2672411f47@2e76e",
+            "1baf0fc9-befa-459c-8bdd-af1a450a0319",
+            "6d26f15d-59dc-4423-8ca0-198ce45e3c31",
+            "d29f28a2-cee6-424e-a857-03ff10a29fe5@1b53b",
+            "d29f28a2-cee6-424e-a857-03ff10a29fe5@ea6e2",
+            "d3c7820c-2a98-4429-8bc7-b8453bc9ac41"
+        ]
+    },
+    "versions": {
+        "import": [],
+        "native": []
+    },
+    "redirect": [],
+    "debug": true,
+    "extensionMap": {}
+}
