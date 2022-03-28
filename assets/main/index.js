@@ -50,6 +50,7 @@ System.register("chunks:///_virtual/GameMgr.ts", ['./_rollupPluginModLoBabelHelp
         _proto.success = function success(position) {
           this.doSomething(position.coords.latitude, position.coords.longitude);
           console.log("HEADING: ", position.coords.heading);
+          console.log("COORDS: ", position.coords);
         };
 
         _proto.error = function error() {
