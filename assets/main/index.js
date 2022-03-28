@@ -1,28 +1,42 @@
 System.register("chunks:///_virtual/GameMgr.ts", ['./_rollupPluginModLoBabelHelpers.js', 'cc'], function (exports) {
   'use strict';
 
-  var _inheritsLoose, cclegacy, _decorator, Component;
+  var _applyDecoratedDescriptor, _inheritsLoose, _initializerDefineProperty, _assertThisInitialized, cclegacy, _decorator, Node, Component;
 
   return {
     setters: [function (module) {
+      _applyDecoratedDescriptor = module.applyDecoratedDescriptor;
       _inheritsLoose = module.inheritsLoose;
+      _initializerDefineProperty = module.initializerDefineProperty;
+      _assertThisInitialized = module.assertThisInitialized;
     }, function (module) {
       cclegacy = module.cclegacy;
       _decorator = module._decorator;
+      Node = module.Node;
       Component = module.Component;
     }],
     execute: function () {
-      var _dec, _class;
+      var _dec, _dec2, _class, _class2, _descriptor, _temp;
 
       cclegacy._RF.push({}, "33fd9KcK9FD+rxCBZuNnWYu", "GameMgr", undefined);
 
       var ccclass = _decorator.ccclass,
           property = _decorator.property;
-      var GameMgr = exports('GameMgr', (_dec = ccclass('GameMgr'), _dec(_class = /*#__PURE__*/function (_Component) {
+      var GameMgr = exports('GameMgr', (_dec = ccclass('GameMgr'), _dec2 = property(Node), _dec(_class = (_class2 = (_temp = /*#__PURE__*/function (_Component) {
         _inheritsLoose(GameMgr, _Component);
 
         function GameMgr() {
-          return _Component.apply(this, arguments) || this;
+          var _this;
+
+          for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+          }
+
+          _this = _Component.call.apply(_Component, [this].concat(args)) || this;
+
+          _initializerDefineProperty(_assertThisInitialized(_this), "Plane", _descriptor, _assertThisInitialized(_this));
+
+          return _this;
         }
 
         var _proto = GameMgr.prototype;
@@ -50,7 +64,9 @@ System.register("chunks:///_virtual/GameMgr.ts", ['./_rollupPluginModLoBabelHelp
         _proto.success = function success(position) {
           this.doSomething(position.coords.latitude, position.coords.longitude);
           console.log("HEADING: ", position.coords.heading);
-          console.log("COORDS: ", position.coords);
+          console.log("COORDS: ", position.coords); // let euler = this.Plane.getRotation().getEulerAngles();
+
+          this.Plane.setRotationFromEuler(0, position.coords.heading, 0);
         };
 
         _proto.error = function error() {
@@ -61,7 +77,14 @@ System.register("chunks:///_virtual/GameMgr.ts", ['./_rollupPluginModLoBabelHelp
         };
 
         return GameMgr;
-      }(Component)) || _class));
+      }(Component), _temp), _descriptor = _applyDecoratedDescriptor(_class2.prototype, "Plane", [_dec2], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return null;
+        }
+      }), _class2)) || _class));
 
       cclegacy._RF.pop();
     }

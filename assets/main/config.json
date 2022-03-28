@@ -4,6 +4,12 @@
     "name": "main",
     "deps": [],
     "uuids": [
+        "07bfe1d86",
+        "1263d74c-8167-4928-91a6-4e2672411f47@2e76e",
+        "1baf0fc9-befa-459c-8bdd-af1a450a0319",
+        "4fc87f6a-c6ed-45e8-a3c9-14e1f658bc2e",
+        "817c3dc1-736c-4d83-a0a5-a4668b7ee9c4",
+        "817c3dc1-736c-4d83-a0a5-a4668b7ee9c4@6c48a",
         "b6c370b0-2473-4dbc-8245-cf8b6fc22d52",
         "fd8ec536-a354-4a17-9c74-4f3883c378c8"
     ],
@@ -16,7 +22,14 @@
     "scenes": {
         "db://assets/scene/scene.scene": "b6c370b0-2473-4dbc-8245-cf8b6fc22d52"
     },
-    "packs": {},
+    "packs": {
+        "07bfe1d86": [
+            "1263d74c-8167-4928-91a6-4e2672411f47@2e76e",
+            "1baf0fc9-befa-459c-8bdd-af1a450a0319",
+            "4fc87f6a-c6ed-45e8-a3c9-14e1f658bc2e",
+            "b6c370b0-2473-4dbc-8245-cf8b6fc22d52"
+        ]
+    },
     "versions": {
         "import": [],
         "native": []
