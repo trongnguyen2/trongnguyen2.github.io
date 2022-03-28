@@ -14,7 +14,7 @@ System.register("chunks:///_virtual/GameMgr.ts", ['./_rollupPluginModLoBabelHelp
     execute: function () {
       var _dec, _class;
 
-      cclegacy._RF.push({}, "f304crMXitM0JixEVE1cLGZ", "GameMgr", undefined);
+      cclegacy._RF.push({}, "33fd9KcK9FD+rxCBZuNnWYu", "GameMgr", undefined);
 
       var ccclass = _decorator.ccclass,
           property = _decorator.property;

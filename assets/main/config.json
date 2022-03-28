@@ -4,7 +4,7 @@
     "name": "main",
     "deps": [],
     "uuids": [
-        "0baacd5d-63cd-4b99-a3e9-ad114e26fe17",
+        "b6c370b0-2473-4dbc-8245-cf8b6fc22d52",
         "fd8ec536-a354-4a17-9c74-4f3883c378c8"
     ],
     "paths": {
@@ -14,7 +14,7 @@
         ]
     },
     "scenes": {
-        "db://assets/newScence.scene": "0baacd5d-63cd-4b99-a3e9-ad114e26fe17"
+        "db://assets/scene/scene.scene": "b6c370b0-2473-4dbc-8245-cf8b6fc22d52"
     },
     "packs": {},
     "versions": {

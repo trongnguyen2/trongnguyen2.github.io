@@ -13,7 +13,7 @@
     "remoteBundles": [],
     "hasResourcesBundle": false,
     "hasStartSceneBundle": false,
-    "launchScene": "db://assets/newScence.scene",
+    "launchScene": "db://assets/scene/scene.scene",
     "jsList": [],
     "moduleIds": [],
     "renderPipeline": "",
