@@ -49,14 +49,14 @@ System.register("chunks:///_virtual/GameMgr.ts", ['./_rollupPluginModLoBabelHelp
 
         _proto.success = function success(position) {
           this.doSomething(position.coords.latitude, position.coords.longitude);
+          console.log("HEADING: ", position.coords.heading);
         };
 
         _proto.error = function error() {
           alert('Sorry, no position available.');
         };
 
-        _proto.doSomething = function doSomething(a, b) {
-          console.log("position: ", a, b);
+        _proto.doSomething = function doSomething(a, b) {//   console.log("position: ", a, b);
         };
 
         return GameMgr;
